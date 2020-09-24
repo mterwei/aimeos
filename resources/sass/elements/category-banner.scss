@@ -1,0 +1,77 @@
+.category-banner {
+
+    @include tablet {
+        display: flex;
+        height: 440px;
+    }
+
+    &__image {
+        position: relative;
+
+        @include tablet {
+            width: 70%;
+        }
+
+        img {
+            height: 100%;
+            min-height: 200px;
+        }
+
+        .transparent-layer {
+            position: absolute;
+            top: 35px;
+            bottom: 35px;
+            right: 35px;
+            left: 35px;
+            background: none;
+
+            .layer {
+                &--headline {
+                    background: $layer-opacity-gray;
+                    text-align: center;
+                    padding: 1.5rem 1.125rem;
+                    color: $white;
+
+                    @include tablet {
+                        padding: 2.5rem 3.125rem;
+                    }
+                }
+            }
+
+            @include tablet {
+                position: absolute;
+                left: 50%;
+                top: 50%;
+                transform: translate(-50%, -50%);
+            }
+        }
+    }
+
+    &__category-list {
+        display: block;
+        background-color: $gray-background;
+        padding-left: 3.75rem;
+        padding-top: 1.875rem;
+        padding-bottom: 1.875rem;
+
+        @include tablet {
+            width: 30%;
+        }
+
+        ul {
+            margin-bottom: 1.875rem;
+            li {
+                margin-bottom: .425rem;
+                a {
+                    color: $white;
+                    font-size: $font-xl;
+
+                    &:hover {
+                        text-decoration: none;
+                    }
+                }
+            }
+        }
+    }
+
+}

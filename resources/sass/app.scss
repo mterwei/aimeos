@@ -1,8 +1,39 @@
-// Fonts
-@import url('https://fonts.googleapis.com/css?family=Nunito');
+// slick
+@import '~slick-carousel/slick/slick-theme';
 
 // Variables
 @import 'variables';
 
 // Bootstrap
 @import '~bootstrap/scss/bootstrap';
+
+// Base
+@import 'base/aimeos';
+@import 'base/core';
+@import 'base/fonts';
+@import 'base/buttons';
+@import 'base/headlines';
+@import 'base/utility';
+@import 'base/inputs';
+
+// Elements
+@import 'elements/image-banner';
+
+// elements
+@import 'elements/top-categories';
+
+// Elements
+@import 'elements/popular-categories';
+
+// Elements
+@import 'elements/category-banner';
+
+//elements
+@import 'elements/tiles';
+
+// elements
+@import 'elements/product-list-big';
+
+// Partials
+@import 'partials/badges';
+@import 'partials/product';

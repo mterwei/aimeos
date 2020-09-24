@@ -1,0 +1,53 @@
+.newsletter-subscription {
+    background-color: $light-gray-background;
+    padding: 1.25rem 0;
+
+
+    & > form {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .subscribe {
+        display: flex;
+
+        input {
+            border-color: $gray-background;
+            background-color: transparent;
+            padding: .75rem .5rem;
+            font-size: $font-small;
+            width: 9.375rem;
+            border-width: 1px;
+
+            @include tablet {
+                width: 14.375rem;
+                font-size: $font-xl;
+                padding: .25rem .5rem;
+            }
+
+            &::placeholder {
+                color: $black;
+                font-weight: $font-light;
+            }
+        }
+        button {
+            padding: 0.3125rem;
+            border: 0 none;
+            background-color: $gray-background;
+
+            .button {
+                @include tablet {
+                    display: block;
+                    padding: .094rem .75rem;
+                    font-size: $font-xl-mobile;
+                }
+
+                &:hover {
+                    background-color: $gray-background;
+                    border-color: $white;
+                }
+            }
+        }
+    }
+}

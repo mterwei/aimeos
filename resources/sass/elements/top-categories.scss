@@ -1,0 +1,39 @@
+.top-categories {
+    padding-top: 1.25rem;
+    background-color: $light-gray-background;
+
+    &__headline {
+        margin-bottom: 1.875rem;
+        text-align: center;
+
+        @include tablet {
+            margin-bottom: 1.25rem;
+        }
+    }
+
+    &__list {
+        padding-top: 1.125rem;
+        padding-bottom: 1.125rem;
+        overflow: hidden;
+
+        @include tablet {
+            display: flex;
+            flex-wrap: wrap;
+            padding-top: 0;
+            justify-content: center;
+        }
+
+        .button {
+            margin: 0 55px 1.25rem 55px;
+            padding: 10px 20px !important;
+            display: block;
+
+            @include tablet {
+                display: inline-block;
+                margin:0.75rem;
+            }
+        }
+
+    }
+
+}

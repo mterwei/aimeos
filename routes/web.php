@@ -11,8 +11,6 @@
 |
 */
 
-Route::get('/', function () {
-    return redirect('shop');
-});
+Route::get('/', 'HomeController@index');
 
 Auth::routes();

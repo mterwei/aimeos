@@ -6,13 +6,14 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
 	@yield('aimeos_header')
+    <script src="{{ asset('js/app.js') }}" defer></script>
 
 	<title>Aimeos on Laravel</title>
 
 	@yield('aimeos_styles')
 
 	<link type="text/css" rel="stylesheet" href='https://fonts.googleapis.com/css?family=Roboto:400,300'>
-	<link type="text/css" rel="stylesheet" href="/css/app.css">
+    <link href="{{ asset('css/app.css') }}" rel="stylesheet">
 
 </head>
 <body>
@@ -41,7 +42,7 @@
 			@yield('aimeos_head')
 		</div>
 	</nav>
-    <div class="container">
+    <div>
 		@yield('aimeos_nav')
 		@yield('aimeos_stage')
 		@yield('aimeos_body')

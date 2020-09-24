@@ -1,0 +1,50 @@
+.button {
+    display: inline-block;
+    text-align: center;
+
+    &.large {
+        font-size: 1.5rem;
+        padding: .875rem 1rem;
+    }
+
+    &.small {
+        font-size: 1.125rem;
+        padding: .25rem .75rem;
+    }
+
+    &.primary {
+        border: 1px solid $black;
+        color: $black;
+        transition: .2s all ease-in;
+
+        &:hover {
+            background-color: $orange-background;
+            color: $white;
+            border-color: $orange-background;
+        }
+    }
+
+    &.secondary {
+        border: 1px solid $white;
+        color: $white;
+        transition: .2s all ease-in;
+
+        &:hover {
+            background-color: $orange-background;
+            color: $white;
+            border-color: $orange-background;
+        }
+    }
+
+    &.orange {
+        background-color: $orange-background;
+        color: $white;
+        padding: 0.3125rem 0.75rem;
+        font-size: $font-xl-mobile;
+    }
+
+    &:focus,
+    &:hover {
+        text-decoration: none;
+    }
+}

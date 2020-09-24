@@ -1,19 +1,34 @@
-// Body
-$body-bg: #f8fafc;
+/* colors */
+$main-font-family-sans-serif: "Work Sans", sans-serif;
+$gray-background: #242424;
+$light-gray-background: #E9E9E9;
+$blue-background: #39B9D9;
+$orange-background: #FFA846;
+$pink-background: #CF3C61;
+$light-green-background: #89E2A0;
+$rose-background: #ff9393;
+$turquoise-background: #007A80;
+$white: #FFFFFF;
+$black: #000000;
+$white-transparent: rgba(255,255,255,0.8);
 
-// Typography
-$font-family-sans-serif: 'Nunito', sans-serif;
-$font-size-base: 0.9rem;
-$line-height-base: 1.6;
+/* styles */
+$layer-opacity-gray: rgba(36, 36, 36, .6);
 
-// Colors
-$blue: #3490dc;
-$indigo: #6574cd;
-$purple: #9561e2;
-$pink: #f66d9b;
-$red: #e3342f;
-$orange: #f6993f;
-$yellow: #ffed4a;
-$green: #38c172;
-$teal: #4dc0b5;
-$cyan: #6cb2eb;
+/* fonts */
+$font-bold: 600;
+$font-regular: 400;
+$font-light: 300;
+
+/* font-sizes */
+$font-small: .875rem;
+$font-base: 1rem;
+$font-xl: 1.25rem; // 20px
+$font-xxl: 1.5rem; // 24px
+$font-headlines: 2.5rem; // 40px;
+
+$font-headlines-mobile: 1.875rem; // 30px
+$font-xl-mobile: 1.125rem; // 18px;
+
+// Mixins
+@import 'mixins/grid';

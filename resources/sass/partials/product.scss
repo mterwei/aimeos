@@ -1,0 +1,217 @@
+.slick-dots {
+    display: none !important;
+}
+
+.next {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%) rotate(-90deg);
+    width: 24px;
+    height: 24px;
+
+    &.slick-next {
+        background: url('../../svg/arrow-slider.svg');;
+        color: unset;
+
+        &:before {
+            content: '';
+        }
+
+        &:hover,
+        &:focus {
+            background: url('../../svg/arrow-slider.svg');;
+            color: unset;
+        }
+    }
+}
+
+.slick-prev {
+    display: none !important;
+}
+
+.product-list {
+    display: grid;
+    grid-template-areas:
+    "small small2"
+    "big big";
+    grid-template-columns: 1fr 1fr;
+    margin-bottom: 0 !important;
+
+    @include tablet {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    & > a {
+        grid-area: small;
+
+        &.product__big {
+            grid-area: big;
+        }
+    }
+}
+
+.product-list,
+.product-slider {
+    width: 100%;
+    position: relative;
+    overflow-x: hidden;
+    margin-bottom: .625rem;
+
+    .slick-track {
+        display: flex;
+    }
+
+    a {
+        &:nth-child(2) {
+            grid-area: small2;
+        }
+
+        @include tablet {
+            width: 25%;
+        }
+
+        .product {
+            height: 350px;
+        }
+    }
+}
+
+.product__link {
+    display: flex !important;
+    justify-content: center;
+
+    &.product__big {
+        background-color: $gray-background;
+
+        @include tablet {
+            width: 50%;
+        }
+
+        .product__image__layer {
+            width: 90%;
+            background-size: cover;
+
+            @include tablet {
+                width: 40%;
+            }
+        }
+
+        .product {
+            &__name {
+                color: $white;
+            }
+
+            &__price {
+                color: $white;
+            }
+        }
+
+    }
+
+    @include tablet {
+        &:hover {
+            .product {
+                &__media {
+                    & > img {
+                        display: none;
+                    }
+
+                    &__layer {
+                        display: flex;
+                        width: 100%;
+                        justify-content: center;
+                    }
+                }
+            }
+        }
+    }
+
+    .product {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        position: relative;
+        width: 100%;
+        overflow: hidden;
+
+        &__name {
+            font-size: $font-xl-mobile;
+            text-align: center;
+            margin: 0;
+            padding-top: 1rem;
+
+            @include tablet {
+                font-size: $font-xxl;
+            }
+        }
+
+        &__price {
+            font-size: $font-xl;
+            text-align: center;
+            display: block;
+        }
+
+        &__rebate {
+            color: $pink-background;
+            text-decoration: line-through;
+            font-size: $font-size-base;
+            display: block;
+            text-align: center;
+        }
+
+        &__media {
+            display:flex;
+            justify-content: center;
+            height: 70%;
+
+            img {
+                height: 100%;
+                width: unset;
+                max-width: 100%;
+                padding: 1rem;
+
+                &:last-child {
+                    display: none;
+                }
+            }
+
+            &__layer {
+                display: none;
+                padding-bottom: 2rem;
+
+                .product__layer {
+                    background: rgba(255, 255, 255, .9);
+                    position: absolute;
+                    bottom: .625rem;
+                    left: .625rem;
+                    right: .625rem;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    flex-direction: column;
+
+                    .product__stock {
+                        font-size: $font-small;
+                        margin: 2.5rem 0;
+                        text-align: center;
+                        display: flex;
+                        align-items: center;
+
+                        &:before {
+                            content: '';
+                            width: 14px;
+                            height: 14px;
+                            border-radius: 50%;
+                            background-color: $light-green-background;
+                            display: inline-block;
+                            margin-right: .625rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

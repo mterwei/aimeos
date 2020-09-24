@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Icons/Icon+Background</title>
+    <g id="Icons/Icon+Background" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Group" fill="#242424" fill-rule="nonzero">
+            <g id="color/sub-color-K">
+                <rect id="Rectangle-3" x="0" y="0" width="24" height="24"></rect>
+            </g>
+        </g>
+        <g id="Group" fill="#FFFFFF" fill-rule="nonzero">
+            <g id="angle-double-down-solid" transform="translate(4.000000, 6.000000)">
+                <path d="M1.36538462,0.423076923 L0.480769231,1.28846154 L8,8.80769231 L15.5192308,1.28846154 L14.6346154,0.423076923 L8,7.05769231 L1.36538462,0.423076923 Z M1.36538462,4.73076923 L0.480769231,5.59615385 L8,13.1153846 L15.5192308,5.59615385 L14.6346154,4.73076923 L8,11.3653846 L1.36538462,4.73076923 Z" id="Shape"></path>
+            </g>
+        </g>
+    </g>
+</svg>

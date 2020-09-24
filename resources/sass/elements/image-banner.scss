@@ -1,0 +1,65 @@
+.image-banner {
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    max-height: 600px;
+
+    & > img {
+        max-height: 600px;
+    }
+
+    &.external {
+        padding: 220px 0;
+
+        .transparent-layer {
+            background: $layer-opacity-gray;
+            position: absolute;
+            top: 50px;
+            bottom: 50px;
+            right: 10px;
+            left: 10px;
+
+            .button {
+                margin-bottom: 1.5rem;
+            }
+
+            @include tablet {
+                position: absolute;
+                left: 50%;
+                top: 50%;
+                transform: translate(-50%, -50%);
+                min-width: 700px;
+                min-height: 320px;
+            }
+        }
+    }
+}
+
+.transparent-layer {
+    background-color: $gray-background;
+    color: $white;
+    padding: 1.5625rem;
+
+    .layer {
+        &--headline {
+            text-align: center;
+        }
+
+        &--body {
+            text-align: center;
+            font-size: 1.25rem;
+            margin: 1.5625rem 0;
+        }
+    }
+
+    .button {
+        margin-bottom: 1.5rem;
+    }
+
+    @include tablet {
+        background: $layer-opacity-gray;
+        position: absolute;
+        right: 1.125rem;
+        bottom: 1.125rem;
+    }
+}

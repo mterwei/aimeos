@@ -1,0 +1,74 @@
+.home {
+
+    max-width: 1440px;
+    margin: 0 auto;
+
+    p, span, a {
+        font-weight: 400;
+    }
+
+    h1, h2, h3 {
+        font-weight: 300;
+    }
+
+    h1, h2 {
+        font-size: 1.875rem;
+
+        @include tablet {
+            font-size: 2.5rem;
+        }
+    }
+
+    h3, h4 {
+        font-size: 1.125rem;
+    }
+
+    h3 {
+        @include tablet {
+            font-size: 1.5rem;
+        }
+    }
+
+    h4 {
+        font-weight: 600;
+
+        @include tablet {
+            font-size: 1.375rem;
+            font-weight: 600;
+        }
+    }
+
+    hr {
+        border-color: $light-gray-background;
+    }
+
+    img {
+        width: 100%;
+        height: auto;
+    }
+
+    ul {
+        list-style: none;
+        padding: 0;
+    }
+}
+
+body {
+    font-family: $main-font-family-sans-serif;
+    color: #000;
+}
+
+.ai-container {
+    padding: 0.5rem 1rem;
+}
+
+a {
+    color: $black;
+
+    &:hover,
+    &:focus {
+        outline: none;
+        text-decoration: none;
+        color: $black;
+    }
+}

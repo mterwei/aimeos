@@ -16,6 +16,7 @@ return [
 		// 'account' => ['prefix' => 'myaccount', 'middleware' => ['web', 'auth']],
 		// 'default' => ['prefix' => 'shop', 'middleware' => ['web']],
 		// 'update' => [],
+        // 'newsletter' => [] //add newsletter registration route/controller here
 	],
 
 

@@ -1,0 +1,35 @@
+.popular-categories {
+    &__list {
+        padding-bottom: 4.375rem;
+
+        @include tablet {
+            display: flex;
+            justify-content: space-between;
+            padding: 0 1.5rem;
+            flex-wrap: wrap;
+        }
+
+        ul {
+            list-style: none;
+            padding: 0 1.5rem;
+            display: inline-block;
+            li {
+                a {
+                    font-size: 14px;
+                    color: $black;
+
+                    &:hover {
+                        text-decoration: none;
+                    }
+                }
+
+                &:first-child {
+                    font-size: $font-xl;
+                    font-weight: $font-bold;
+                }
+            }
+
+        }
+    }
+
+}

@@ -1,0 +1,9 @@
+// Mobile first breakpoints
+$breakpoint-sm: 48em;
+$breakpoint-lg: 64em;
+$breakpoint-xl: 75em;
+
+@mixin mobile {@media (max-width: 767px) {@content;}}
+@mixin tablet {@media (min-width: $breakpoint-sm) {@content;}}
+@mixin desktop {@media (min-width: $breakpoint-lg) {@content;}}
+@mixin cinema {@media (min-width: $breakpoint-xl) {@content;}}
